@@ -3,6 +3,10 @@ published: true
 title: Hello world
 layout: post
 ---
-This is a test post for my new blog. The blog is hosted on [Github Pages](http://pages.github.com/) which means the source is available at [github.com/jacobdecastro/jacobdecastro.github.io](http://github.com/jacobdecastro/jacobdecastro.github.io). Be nice. Give credit. Share, don't steal :)
+Hey guys!
 
-By the way, this blog is powered by [tinypress.co](https://tinypress.co).
+You may know me from North of Park, but I starting clean over here. Sorry for all the broken links!
+
+If there are any posts you want, send me a Tweet -> @Jacob_decastro.
+
+Stay tuned for more!
