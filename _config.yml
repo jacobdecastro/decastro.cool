@@ -3,5 +3,5 @@ pygments: true
 markdown: kramdown
 title: Jacob deCastro
 tagline: Writer + Visual Designer
-description: My awesome new site via <a href="https://tinypress.co/" target="_blank">Tinypress</a>
+description: Writing, designing, running, and cycling out of Indianapolis, IN.
 paginate: 5
