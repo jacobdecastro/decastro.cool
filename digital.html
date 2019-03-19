@@ -15,7 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
 
 
-        <title>Digital Editor Helper | Indiana Daily Student</title>
+        <title>Digi Tools | Indiana Daily Student</title>
 
         <style type="text/css">
             body {
@@ -25,14 +25,15 @@
                 font-family: 'Roboto Mono', monospace;
                 padding: 10px;
                 font-size: 12px;
+                margin-bottom: 15px;
             }
         </style>
     </head>
     <body>
         <nav class="navbar navbar-light bg-light" style="margin-bottom: 30px">
             <img src="https://duvq7ua50whdw.cloudfront.net/787ab67998e23ba1b6a90bbf1c0aca2d/dist/img/ids-logo-short.svg" width="%" class="float-right" width="30" height="30" class="d-inline-block align-top" alt="">
-          <a class="navbar-brand" href="#">    
-            Digital Desk
+          <a class="navbar-brand" href="">    
+            Digi Tools <span class="text-muted">— Beta</span>
           </a>
         </nav>
         <div class="container" style="padding-bottom: 50px;">
@@ -47,11 +48,10 @@
                         <label for="exampleInputEmail1">URL</label>
                         <input class="form-control" id="url"></p>
                     </div>
-                    <button id="say" class="btn btn-secondary">Generate code</button>
+                    <button id="say" class="btn btn-secondary btn-ouline" style="margin-bottom: 15px;">Generate code</button>
                      
-                    <hr>
-                    <div class="pre bg-light">
-                        <p>&lt;div class="embed-related"&gt;&lt;a href="<span id="result2"></span>" target="_blank">RELATED: <span id="result1"></span>&lt;/a&gt;&lt;/div&gt;
+                    <div class="pre bg-light" >
+                        <p id="relatedc">&lt;div class="embed-related"&gt;&lt;a href="<span id="result2"></span>" target="_blank">RELATED: <span id="result1"></span>&lt;/a&gt;&lt;/div&gt;
                         </p>
                     </div>
                     <script>
@@ -168,7 +168,7 @@
         </div>
         <div class="container">
             <div class="col-md-12">
-                <p style="text-align: center;" class="text-secondary"><small>made with <i class="fas fa-heart"></i> by jacob decastro | found an error? email jdecastr@iu.edu</small></p>
+                <p style="text-align: center;" class="text-secondary"><small>made with <i class="fas fa-heart"></i> by jacob decastro | found an error? email jdecastr@iu.edu | v1.0</small></p>
             </div>
         </div>
         <script type="text/javascript">
@@ -179,5 +179,22 @@
                 document.write(Headline);
             }
         </script>
+         <script>
+    var btn = document.getElementById('btnCopy');
+    var clipboard = new ClipboardJS(btn);
+    clipboard.on('success', function(e) {
+        console.log(e);
+    });
+    clipboard.on('error', function(e) {
+        console.log(e);
+    });
+    </script>
+        <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
     </body>
 </html>
