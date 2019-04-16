@@ -1,0 +1,32 @@
+{
+  "bookendVersion": "v1.0",
+  "shareProviders": [
+    "facebook",
+    "twitter",
+    "email"
+  ],
+  "components": [
+    {
+      "type": "heading",
+      "text": "Credits"
+    },
+    {
+  "type": "textbox",
+  "text": [
+    "Written by Caroline Anders",
+    "Produced by Jacob deCastro"
+  ]
+},
+    {
+      "type": "heading",
+      "text": "Read more"
+    },
+    {
+      "type": "landscape",
+      "title": "'She should've known better'",
+      "url": "https://idsnews.com/barge",
+      "image": "https://snworksceo.imgix.net/ids/b2195ea9-c8ec-4df4-a62a-5e559cf980f5.sized-1000x1000.jpg?",
+      "category": "Investigations"
+    }
+  ]
+}
