@@ -1,0 +1,120 @@
+.container {
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-top: 5%;
+      max-width: 900px
+    }
+
+    .grey {
+      color: #444;
+      font-weight: 700;
+    }
+    .wave {
+  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 3px 3px;
+  color: #000;
+  text-decoration: none;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+  background-position: 0 100%;
+  background-size: auto 6px;
+  background-repeat: repeat-x;
+  text-decoration: none;
+  color: white;
+}
+
+html {
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: basic-sans, sans-serif;
+}
+
+html {
+  background: linear-gradient(183deg, #00b7b1, #ffae26, #d726ff);
+background-size: 1000% 1000%;
+
+-webkit-animation: backgroundfun 9s ease infinite;
+-moz-animation: backgroundfun 9s ease infinite;
+animation: backgroundfun 9s ease infinite;
+
+}
+
+@-webkit-keyframes backgroundfun {
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
+}
+@-moz-keyframes backgroundfun {
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
+}
+@keyframes backgroundfun {
+    0%{background-position:0% 53%}
+    50%{background-position:100% 48%}
+    100%{background-position:0% 53%}
+}
+
+.meta {text-transform: uppercase; font-size: 11px; letter-spacing: .15em;}
+.meta a:hover {color: black; transition:0.2s;}
+
+.inline-list {list-style: none; margin: 0; padding: 0;}
+.inline-list li {display: inline-block;}
+
+footer .inline-list li {margin-right: 40px;}
+footer a {border: none; color: white; text-decoration: none;}
+footer {margin: 0 auto; position: absolute; bottom: 55%; right: -255px; padding: 40px 0 0 0; width: 600px; -webkit-transform: rotate(-90deg);}
+
+.fancy {font-family: baskerville, garamond, serif; font-weight: lighter; font-style: italic;}
+
+ul.nav {list-style: none; margin: 0px; padding: 0px; color: black;}
+ul.nav li {display: inline; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; padding-right: 4px;}
+ul.nav a {color: black; border-bottom: 1px dotted black;}
+ul.nav a.dim {color: #acacac; border-bottom: 1px dotted #acacac;}
+ul.nav a:hover {font-weight: 900;}
+
+#filters {padding: 30px 0px; overflow: auto;}
+#tags {line-height: 25px;}
+
+table {border-spacing: 0px; min-width: 100%; margin: 0 auto;}
+th {padding: 10px}
+td, text {padding: 5px 10px; font-size: 16px; font-weight: lighter; line-height: 18px;}
+td.article a:visited {color: black;}
+td.date {max-width: 119px;}
+tr {text-align: left; vertical-align: top; padding: 4px 0px;}
+tr:nth-child(2n+2) {background: transparent;}
+.tHeader {cursor: pointer;}
+.tHeader::after {content: " \2193 \2191 "; font-size: 10px; padding-left: 3px;}
+
+input {margin: 12px 0px; border: none; border-bottom: 1px solid #333; background-color: transparent; padding: 0px; color: #acacac; font-size: 13px; height: 22px; font-family: bp;}
+
+.sml-button {border-radius: 1px; cursor: pointer; margin-left: 4px; padding: 4px 6px; background-color: black; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; text-align: center; color: #fff; font-family: proxima-nova, sans-serif;}
+.sml-button:hover {background: #eee;}
+.button-pressed {background: #0CCC96;}
+
+.tablelnk {
+      color: black;
+      text-decoration: none;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: black;
+      text-decoration: none;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+      text-decoration: none;
+}
+
+::placeholder {
+  color: black;
+      text-decoration: none;
+}
+#articleSearch {
+      font-family: proxima-nova, sans-serif;
+}

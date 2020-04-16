@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<title>jacob decastro (.cool)</title>
+    <meta charset="UTF-8">
+		<script type="text/javascript" src="js/ICanHaz.js"></script> 
+		<script type="text/javascript" src='js/jquery.js '></script>
+    <script type="text/javascript" src='js/tabletop.js'></script>
+    <script type="text/javascript" src='js/site.js'></script>
+		<script type="text/javascript" src='js/sheetsee.js'></script>
+    
+		<link rel="shortcut icon" href="https://raw.github.com/jlord/sheetsee-pocket/master/favicon-p.png"/>
+		<link rel="stylesheet" href="https://use.typekit.net/ljg7iyb.css">
+		<link media="screen" rel="stylesheet" type="text/css" href="css/style.css"> 
+	</head>
+<body>
+	<div class="container">
+		<h1 style="text-align: left;">some <span class="wave">web dev</span> projects from jacob decastro</h1>
+		<p style="text-align: left;">web and print designer at the indiana daily student | journalism student at indiana university | previous work with nasa, u.s. house of representatives rules committee, the shawnee summer theatre and the indiana state department of agriculture</p>
+	
+
+		<div id="filters" class="container">
+			<input id="articleSearch" type="text" placeholder="Search for.."></input>
+			<span class="clear sml-button">Clear</span> 
+      <h3>Tags <span id="tags"></span>   
+    </div>
+
+		<div id="articleTable"></div>
+	</div>
+	
+	
+    <footer>
+      <ul class="meta inline-list">	
+        <li><a href="http://jacobdecastro.com" target="_blank">Main website</a></li>
+        <li><a href="mailto:jacobdecastro@outlook.com">jacobdecastro@outlook.com</a></li>
+        <li><a href="http://www.twitter.com/jacob_decastro" target="_blank">twitter</a></li>
+      </ul>
+    </footer>
+	</div><!-- end wrapper -->
+	
+	<script id="title" type="text/html">
+		<h1><span class="highlighted">{{numArticles}}</span> Articles from Pocket</h1>
+	</script>
+
+  <script id="tags" type="text/html">
+    {{#rows}}
+      <span href="#" class="tag sml-button">{{.}}</span>
+    {{/rows}}
+  </script>
+
+	<script id="articleTable" type="text/html">
+		<table>
+			<tr><th class="fancy">&#8470;</th><th class="date">Date</th><th class="">Article</th><th>Tags</th></tr>
+		  {{#rows}}
+		  	<tr class="{{rowNumber}}"><td class="light-type">{{rowNumber}}</td><td class="date">{{date}}</td><td class="article"><a class="tablelnk" href="{{url}}" target="_blank">{{article}}</a></td>
+		  	<td class="tag">{{#tags}}<a class="tablelnk" href="#">{{tag}}</a> {{/tags}}</td></tr>
+		  {{/rows}}
+	  </table>
+	</script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var URL = "121eCz_JHW03JgAoK14v6b04YLVAoXMH9-C5u94SEZ7g"
+      Tabletop.init( { key: URL, callback: showInfo, simpleSheet: true } )
+    }) 
+      
+    function showInfo(data) {
+      var gData = separateTags(data)
+      drawTags(gData)
+      cleanDates(gData)
+      pageTitle(gData)
+      Sheetsee.makeTable(gData.reverse(), "#articleTable")
+      Sheetsee.initiateTableFilter(gData, "#articleSearch", "#articleTable")
+
+      $(document).on("click", ".tag", function(event){
+        var tag = $(event.target).text()
+        var tagFilter = getTagMatches(gData, tag)
+        Sheetsee.makeTable(tagFilter.reverse(), "#articleTable")
+      })
+    }
+  </script>
+
+</body>
+</html>
