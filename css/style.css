@@ -1,119 +1,239 @@
-.container {
-      padding-left: 15%;
-      padding-right: 15%;
-      padding-top: 5%;
-      max-width: 900px
-    }
-
-    .grey {
-      color: #444;
-      font-weight: 700;
-    }
-    .wave {
-  background: linear-gradient(to bottom, var(--mainColor) 0%, var(--mainColor) 100%);
-    background-position: 0 100%;
-    background-repeat: repeat-x;
-    background-size: 3px 3px;
-  color: #000;
-  text-decoration: none;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23FFFFFF' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
-  background-position: 0 100%;
-  background-size: auto 6px;
-  background-repeat: repeat-x;
-  text-decoration: none;
-  color: white;
+.container-fluid {
+	padding-left: 3em;
+	padding-right: 3em;
 }
 
-html {
-  font-family: proxima-nova, sans-serif;
-  font-size: 16px;
+p {
+	font-family: noort, 'Georgia', serif;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+li {
+	font-family: noort, 'Georgia', serif;
+	font-size: 18px;
+	line-height: 26px;
+	padding-top: 4px;
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: basic-sans, sans-serif;
+	font-family: obviously-narrow, sans-serif;
 }
 
-html {
-  background: linear-gradient(270deg, #31d8d9, #24c11c, #e8db26, #e88626);
-background-size: 1000% 1000%;
-
--webkit-animation: AnimationName 16s ease infinite;
--moz-animation: AnimationName 16s ease infinite;
-animation: AnimationName 16s ease infinite;
+h3 {
+	padding-bottom: 1em;
 }
 
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+header {
+	font-family: obviously-narrow, sans-serif;
+
+	font-weight: 400;
+	font-style: normal;
+	margin-bottom: 10em;
+	text-align: left;
 }
 
-.meta {text-transform: uppercase; font-size: 11px; letter-spacing: .15em;}
-.meta a:hover {color: black; transition:0.2s;}
-
-.inline-list {list-style: none; margin: 0; padding: 0;}
-.inline-list li {display: inline-block;}
-
-footer .inline-list li {margin-right: 40px;}
-footer a {border: none; color: white; text-decoration: none;}
-footer {margin: 0 auto; position: absolute; bottom: 55%; right: -255px; padding: 40px 0 0 0; width: 600px; -webkit-transform: rotate(-90deg);}
-
-.fancy {font-family: baskerville, garamond, serif; font-weight: lighter; font-style: italic;}
-
-ul.nav {list-style: none; margin: 0px; padding: 0px; color: black;}
-ul.nav li {display: inline; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; padding-right: 4px;}
-ul.nav a {color: black; border-bottom: 1px dotted black;}
-ul.nav a.dim {color: #acacac; border-bottom: 1px dotted #acacac;}
-ul.nav a:hover {font-weight: 900;}
-
-#filters {padding: 30px 0px; overflow: auto;}
-#tags {line-height: 25px;}
-
-table {border-spacing: 0px; min-width: 100%; margin: 0 auto;}
-th {padding: 10px}
-td, text {padding: 5px 10px; font-size: 16px; font-weight: lighter; line-height: 18px;}
-td.article a:visited {color: black;}
-td.date {max-width: 119px;}
-tr {text-align: left; vertical-align: top; padding: 4px 0px;}
-tr:nth-child(2n+2) {background: transparent;}
-.tHeader {cursor: pointer;}
-.tHeader::after {content: " \2193 \2191 "; font-size: 10px; padding-left: 3px;}
-
-input {margin: 12px 0px; border: none; border-bottom: 1px solid #333; background-color: transparent; padding: 0px; color: #acacac; font-size: 13px; height: 22px; font-family: bp;}
-
-.sml-button {border-radius: 1px; cursor: pointer; margin-left: 4px; padding: 4px 6px; background-color: black; font-size: 11px; text-transform: uppercase; letter-spacing: .1em; text-align: center; color: #fff; font-family: proxima-nova, sans-serif;}
-.sml-button:hover {background: #eee;}
-.button-pressed {background: #0CCC96;}
-
-.tablelnk {
-      color: black;
-      text-decoration: none;
+.btn {
+	font-family: obviously-narrow, sans-serif;
+	font-weight: 400;
+	font-size: 18px;
+	padding-bottom: 12px;
 }
 
-::-webkit-input-placeholder { /* Edge */
-  color: black;
-      text-decoration: none;
+a {
+	color: black;
+	text-decoration: underline;
+	text-decoration-color: black;
+	text-decoration-thickness: .14em;
+	text-underline-offset: 3px;
+	transition: 0.2s;
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: black;
-      text-decoration: none;
+a:hover {
+	color: #15569C;
+	text-decoration: underline;
+	text-decoration-color: #15569C;
+	text-decoration-thickness: .14em;
+	text-underline-offset: 3px;
+	transition: 0.2s;
 }
 
-::placeholder {
-  color: black;
-      text-decoration: none;
+.top {
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.66) 25%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.66) 25%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.66) 25%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,1) 75%, rgba(255,255,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
+
 }
-#articleSearch {
-      font-family: proxima-nova, sans-serif;
+
+.top h1 {
+	font-size: 32px;
+	line-height: px;
 }
+
+.orange {
+	color: #FAA41A;
+}
+
+.section-header {
+	padding-bottom: 1em;
+}
+
+.entry {
+	background-color: #E0E0E0;
+	padding: 8px;
+	padding-top: 12px;
+	margin-bottom: 16px;
+	transition: 0.5s;
+}
+
+.entry:hover {
+	background-color: #F8F9FA;
+	transition: 0.5s;
+}
+
+.section {
+	padding-bottom: 3em;
+	padding-top: 3em;
+}
+
+.headScroll {
+	padding-left: 3em;
+	padding-top: 1em;
+}
+
+#topHead {
+	padding-top: 2em;
+	padding-bottom: 1em;
+	padding-left: 3em;
+}
+
+.entryTitle {
+	font-family: noort, 'Georgia', serif;
+	font-size: 18px;
+	line-height: 22px;
+}
+
+.entryTitle:hover {
+	font-family: noort, 'Georgia', serif;
+	font-size: 18px;
+	line-height: 22px;
+	font-style: italic;
+}
+
+
+.tags {
+	font-family: obviously, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.expTitle {
+	margin-bottom: 24px;
+}
+
+.award {
+	font-family: obviously, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.colophon {
+	font-family: noort, 'Georgia', serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+a.entryWrapper {
+	color: black;
+	text-decoration: none;
+}
+
+.blue {
+	color: #15569C;
+}
+
+.social {
+	margin-left: 10px;
+}
+
+.socialBtn {
+	padding-top: 10px;
+}
+
+.kurt {
+	font-family: noort, 'Georgia', serif;
+	font-size: 14px;
+	line-height: 16px;
+	padding-top: ;
+	hanging-punctuation: first;
+	color: #AFAFAF;
+	text-align: left;
+}
+
+#partFour {
+	padding-top: 6em;
+}
+
+.proExp {
+	padding-top: 2em;
+}
+
+	@media (min-width: 768px) {
+	
+		.wide-right {
+			padding-top: 15px;
+			padding-bottom: 30px;
+			padding-left: 25px;
+			margin-right: -30%;
+			float: right;
+			width: 40%;
+			text-align: left;
+			
+		}
+
+		.wide-left {
+			padding-top: 15px;
+			padding-bottom: 30px;
+			padding-right: 25px;
+			margin-left: -30%;
+			float: left;
+			width: 40%;
+			text-align: right;
+			
+		}
+
+		.wide-left p {
+			font-family: obviously, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+		}
+
+		.wide-right p {
+			font-family: obviously, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.big-image,.wide-right,.wide-left {
+			padding-top: 25px;
+			padding-bottom: 25px;
+			font-family: obviously, sans-serif;
+	font-size: 12px;
+	line-height: 14px;
+		}
+	}
+
+.customTop {
+	margin-bottom: 2em;
+}
+
+.card-text {
+	font-family: obviously, sans-serif;
+	font-size: 14px;
+	line-height: 18px;
+}
+
