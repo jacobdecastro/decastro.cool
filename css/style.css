@@ -76,7 +76,7 @@ a:hover {
 .entry {
 	background-color: #E0E0E0;
 	padding: 8px;
-	padding-top: 12px;
+	margin-top: 12px;
 	margin-bottom: 16px;
 	transition: 0.5s;
 }
@@ -226,7 +226,7 @@ a.entryWrapper {
 	}
 
 	@media (max-width: 767px) {
-		.big-image, .wide-right, .wide-left p {
+		.big-image, .wide-right, .wide-left {
 			padding-top: 25px;
 			padding-bottom: 25px;
 			font-family: obviously, system-ui, sans-serif;
@@ -237,8 +237,8 @@ a.entryWrapper {
 		.wide-left p {
 			padding-bottom: 25px;
 			font-family: obviously, system-ui, sans-serif;
-			font-size: 14;
-			line-height: 22;
+			font-size: 14px;
+			line-height: 22px;
 		}
 
 		.wide-right p {
@@ -253,10 +253,14 @@ a.entryWrapper {
 			padding-left: 1em; padding-right: 1em; padding-top: .5em; padding-bottom: .5em
 		}
 
+		.entry {
+			padding-top: 36px;
+		}
+
 		.container-fluid {
-	padding-left: 1em;
-	padding-right: 1em;
-}
+			padding-left: 1em;
+			padding-right: 1em;
+		}
 	}
 
 .customTop {
