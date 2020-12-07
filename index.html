@@ -81,26 +81,20 @@
         </nav>
 
     </header>
-    <div class="container-fluid section" style="padding-bottom: 5em; padding-top: 5em;">
+    <div class="container-fluid section" style="padding-bottom: 5em; padding-top: em;">
         <div class="row d-flex justify-content-center">
             <div class="col-md-6">
-                <!-- <div class="card customTop">
-                    <div class="card-body">
-                    <h4 class="card-title"><span id="message"></span>, New York Times team 👋</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  </div>
-                </div> -->
                 <p><strong>Thanks for stopping by!</strong> I'm (he/him) a journalist, web designer, project manager, amateur baker and soon-to-be graduate of Indiana University.</p>
 
                 <img src="https://pbs.twimg.com/profile_images/1300602772635648000/EIBTYl8F_400x400.jpg" height="150px" style="border-radius: 50%; float: right; margin-left: 15px;" alt="Me, smiling outside Franklin Hall in Bloomington, Indiana."> 
                 <p>I'm based in Bloomington, Indiana, where I'm the <a href="#eic">editor-in-chief</a> of the Indiana Daily Student and a teaching assistant for an introductory reporting class.</p>
-                <p>I'm also a proud member of NLGJA: The Association of LGBTQ Journalists, the Asian American Journalists Association, Reporters Without Borders and the Society for News Design.</p>
+                <p>I'm also a proud member of NLGJA: The Association of LGBTQ Journalists, the Asian American Journalists Association, and the Society for News Design.</p>
                 <p>On this website, I've shared some of my favorite projects and some thoughts behind them and how I work. You can also <a href="https://drive.google.com/file/d/19vPW8jCsbplpJm_31NCIV5LhBDuVOfNy/view?usp=sharing" target="_blank">download my resume</a> or <a href="https://www.linkedin.com/in/jacobdecastro/" target="_blank">visit LinkedIn</a>.
             </div>
         </div>
     </div>
     <section class="bg-light" id="featuredWork">
-        <div class="container-fluid section" style="padding-top: 2em; padding-bottom: 2em; margin-top: 5em;">
+        <div class="container-fluid section" style="padding-top: 2em; padding-bottom: 2em;">
             <div class="row">
                 <div class="col-md-12 section-header">
                     <h3>Featured web development and design</h3>
@@ -142,7 +136,7 @@
                         <p class="entryTitle"><strong>&lsquo;She should've known better&rsquo;</strong> Investigation into harassment allegations against mayoral candidate</p>
                         <hr>
                         <p class="tags">March 2019</p>
-                        <p class="tags">Reporting, Front-end dev, Data viz</p>
+                        <p class="tags">Front-end dev, Data viz</p>
                         <p class="award"><i class="fas fa-award"></i> First place in Multimedia News Feature, 2019 Associated College Press Awards</p>
                     </a>
                 </div>
@@ -160,13 +154,6 @@
                         <p class="award"><i class="fas fa-award"></i> First place in Animation/Interactive Graphic, 2020 Indiana Collegiate Press Association Awards</p>
                     </a>
                 </div>
-            </div>
-            <div class="d-flex justify-content-center" style="padding-top: 2em;">
-            <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                View more projects
-            </button>
-        </div>
-            <div class="collapse" id="collapseExample">
                 <div class="row d-flex justify-content-center" style="padding-top: 3em;">
                     <div class="col-md-3">
                         <a class="entryWrapper" target="_blank" href="http://specials.idsnews.com/from-memory-stancombe-house-seventh-street-bloomington-indiana/index.html">
@@ -382,7 +369,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 
-    <script type="text/javascript">
+ <script type="text/javascript">
+        // For footer
         var today = (new Date()).getDay();
         switch (today) {
             case 0:
@@ -407,61 +395,24 @@
                 document.getElementById('day-text').innerHTML = 'Saturday';
                 break;
         }
+        // For top box
+        var thehours = new Date().getHours();
+            var howdy;
+            var morning = ('Good morning');
+            var afternoon = ('Good afternoon');
+            var evening = ('Good evening');
 
-        var today = new Date();
-            var time = today.getHours();
-            var greet;
+            if (thehours >= 0 && thehours < 12) {
+                howdy = morning; 
 
-            if (time > 18) {
-              greet = 'Good evening';
-            } else if (time > 12) {
-              greet = 'Good afternoon';
-            } else if (time >= 0) {
-              greet = 'Good morning';
-            } else {
-              greet = 'Hey';
+            } else if (thehours >= 12 && thehours < 17) {
+                howdy = afternoon;
+
+            } else if (thehours >= 17 && thehours < 24) {
+                howdy = evening;
             }
 
-            var show = document.getElementById('message');
-            show.textContent = greet;
-
-        // Select all links with hashes
-        $('a[href*="#"]')
-          // Remove links that don't actually link to anything
-          .not('[href="#"]')
-          .not('[href="#0"]')
-          .click(function(event) {
-            // On-page links
-            if (
-              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-              && 
-              location.hostname == this.hostname
-            ) {
-              // Figure out element to scroll to
-              var target = $(this.hash);
-              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-              // Does a scroll target exist?
-              if (target.length) {
-                // Only prevent default if animation is actually gonna happen
-                event.preventDefault();
-                $('html, body').animate({
-                  scrollTop: target.offset().top
-                }, 1000, function() {
-                  // Callback after animation
-                  // Must change focus!
-                  var $target = $(target);
-                  $target.focus();
-                  if ($target.is(":focus")) { // Checking if the target was focused
-                    return false;
-                  } else {
-                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                    $target.focus(); // Set focus again
-                  };
-                });
-              }
-            }
-          });
-
+            $('#heyhey').append(howdy);
     </script>
   </body>
 </html>
