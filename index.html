@@ -17,14 +17,34 @@
 
     <title>Hi, I'm Jacob deCastro | Journalist + web developer-designer</title>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45970099-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Social cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@jacob_decastro">
+    <meta name="twitter:title" content="Jacob deCastro — journalist + web developer-designer">
+    <meta name="twitter:description" content="Hi! I'm (he/him) a journalist, web designer, project manager, amateur baker and soon-to-be graduate of Indiana University.">
+    <meta name="twitter:image" content="https://i0.wp.com/jacobdecastro.com/wp-content/uploads/2020/12/Jacob_DeCastro-700x467-2.jpg?w=700&ssl=1">
 
-  gtag('config', 'UA-45970099-2');
+    <meta property="og:title" content="Jacob deCastro — journalist + web developer-designer" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="description" content="Hi! I'm (he/him) a journalist, web designer, project manager, amateur baker and soon-to-be graduate of Indiana University." />
+    <meta property="og:description" content="Hi! I'm (he/him) a journalist, web designer, project manager, amateur baker and soon-to-be graduate of Indiana University." />
+    <link rel="canonical" href="https://decastro.cool" />
+    <meta property="og:url" content="https://decastro.cool" />
+    <meta property="og:site_name" content="Jacob deCastro — journalist + web developer-designer" />
+    <meta property="og:image" content="https://i0.wp.com/jacobdecastro.com/wp-content/uploads/2020/12/Jacob_DeCastro-700x467-2.jpg?w=700&ssl=1" />
+    <meta property="og:type" content="article" />
+
+    <meta name="author" content="Jacob deCastro">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45970099-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-45970099-2');
 </script>
 
 
@@ -404,6 +424,43 @@
 
             var show = document.getElementById('message');
             show.textContent = greet;
+
+        // Select all links with hashes
+        $('a[href*="#"]')
+          // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function(event) {
+            // On-page links
+            if (
+              location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+              && 
+              location.hostname == this.hostname
+            ) {
+              // Figure out element to scroll to
+              var target = $(this.hash);
+              target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+              // Does a scroll target exist?
+              if (target.length) {
+                // Only prevent default if animation is actually gonna happen
+                event.preventDefault();
+                $('html, body').animate({
+                  scrollTop: target.offset().top
+                }, 1000, function() {
+                  // Callback after animation
+                  // Must change focus!
+                  var $target = $(target);
+                  $target.focus();
+                  if ($target.is(":focus")) { // Checking if the target was focused
+                    return false;
+                  } else {
+                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+                    $target.focus(); // Set focus again
+                  };
+                });
+              }
+            }
+          });
 
     </script>
   </body>
