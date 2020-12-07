@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 p {
 	font-family: noort, 'Georgia', serif;
 	font-size: 18px;
@@ -269,7 +273,13 @@ a.entryWrapper {
 .card-text {
 	font-family: obviously, sans-serif;
 	font-size: 14px;
-	line-height: 18px;
+	line-height: 20px;
+}
+
+.obv li {
+	font-family: obviously, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
 }
 
 .navbtn {
