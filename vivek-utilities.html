@@ -1,12 +1,13 @@
+
 <!DOCTYPE html>
 <html lang="en" >
 
 <head>
   <meta charset="UTF-8">
   <title>Utilities Usage</title>
-  
-  
-  
+
+
+
      <style>
      body {
   margin: 0;
@@ -69,7 +70,7 @@
 		}
     </style>
 
-  
+
 </head>
 
 <body>
@@ -80,14 +81,14 @@
 <script src='https://api.mapbox.com/mapbox.js/plugins/turf/v3.0.11/turf.min.js'></script>
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
-<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<script src='https://npmcdn.com/@turf/turf@5.0.4/turf.min.js'></script>
 
 <body>
 <nav id="menu"></nav>
 <div id='map'></div>
 </body>
-  
-  
+
+
 
     <script  src="js/index.js"></script>
     <script>
@@ -407,7 +408,7 @@ map.on("load", function() {
 
       for (var t = 0; t < toggleableLayerIds.length; t++) {
         var tog = toggleableLayerIds[t].replace(" ", "-") + "-tog";
-        
+
         if (toggleableLayerIds[t] != clickedLayer) {
           map.setLayoutProperty(toggleableLayerIds[t], "visibility", "none");
           document.getElementById(tog).className = "active";
@@ -417,17 +418,17 @@ map.on("load", function() {
         }
       }
     };
-    
+
     var layers = document.getElementById("menu");
     layers.appendChild(link);
   }
 
   var nav = new mapboxgl.NavigationControl();
   map.addControl(nav, "bottom-left");
-  
+
   // var fscr = new mapboxgl.FullscreenControl();
   // map.addControl(fscr, "top-left");
-	
+
 	var fscr = new mapboxgl.FullscreenControl();
   map.addControl(fscr, "top-left");
 
