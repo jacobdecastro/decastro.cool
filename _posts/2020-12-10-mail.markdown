@@ -1,0 +1,11 @@
+---
+layout: default
+title:  Will your mail-in ballot arrive in time to count?
+subhead: A look into how recent mail slowdowns affected mail delivery
+image-url: https://i1.wp.com/jacobdecastro.com/wp-content/uploads/2020/11/mail.png?w=1000&ssl=1
+project-url: http://specials.idsnews.com/will-your-mail-in-ballot-arrive-in-time-to-count-usps-election-2020/index.html
+---
+
+<i class="bi bi-tags-fill"></i> Reporting, Front-end dev, Data viz
+
+<i class="bi bi-award-fill"></i> Fourth place in Multimedia News Feature, 2020 ACP Best of Show

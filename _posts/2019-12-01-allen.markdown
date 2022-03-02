@@ -1,0 +1,15 @@
+---
+layout: default
+title:  What’s Tom Allen worth?  
+subhead: A visualization of far the football coach's $3.9 million annual salary will go
+image-url: https://i0.wp.com/jacobdecastro.com/wp-content/uploads/2020/11/allen.png?w=500&ssl=1
+project-url: http://specials.idsnews.com/whats-iu-football-coach-tom-allen-worth-contract/index.html
+---
+
+<i class="bi bi-tags-fill"></i> Reporting, Front-end dev
+
+<i class="bi bi-award-fill"></i> Third place in Informational Graphic, 2020 Associated College Press Awards
+
+<i class="bi bi-award-fill"></i> Third place in Standalone Multimedia, 2020 Society for News Design Student Design Contest
+
+<i class="bi bi-award-fill"></i> First place in Animation/Interactive Graphic, 2020 Indiana Collegiate Press Association Awards

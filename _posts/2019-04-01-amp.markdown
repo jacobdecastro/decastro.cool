@@ -1,0 +1,9 @@
+---
+layout: default
+title:  The Barge story 
+subhead: Tap story timeline of investigation into sexual harassment allegations
+image-url: https://i1.wp.com/jacobdecastro.com/wp-content/uploads/2020/11/barge-amp.png?w=500&ssl=1
+project-url: https://idsnews.indiana.edu/news/bargetimeline/barge-timeline.html
+---
+
+<i class="bi bi-tags-fill"></i> AMP story design, Front-end dev

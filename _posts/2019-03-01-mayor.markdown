@@ -1,0 +1,11 @@
+---
+layout: default
+title:  She should've known better 
+subhead: Investigation into sexual harassment allegations against mayoral candidate
+image-url: https://i0.wp.com/jacobdecastro.com/wp-content/uploads/2020/11/barge.png?w=500&ssl=1
+project-url: http://specials.idsnews.com/bloomington-mayoral-candidate-amanda-barge-accused-of-sexual-harassment/index.html
+---
+
+<i class="bi bi-tags-fill"></i> Data viz, Front-end dev
+
+<i class="bi bi-award-fill"></i> First place in Multimedia News Feature, 2019 Associated College Press Awards

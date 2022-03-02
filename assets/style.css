@@ -1,0 +1,95 @@
+/* TYPOGRAPHY */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+	font-family: 'Inter', sans-serif !important;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	padding-bottom: 6px;
+}
+
+p.mono {
+	font-size: 12px !important;
+}
+
+/* NAV */
+
+.navbar {
+	background-clip: white;
+	border-bottom: 1px solid black;
+	font-family: 'Inter', sans-serif;
+}
+
+a.nav-link {
+	color: black !important;
+}
+
+.navbar-brand {
+	font-weight: 700;
+}
+
+.navbar-brand, .nav-item {
+	font-size: 18px;
+}
+
+/* MAIN CONTAINER */
+
+.p-top {
+	padding-top: 4%;
+}
+
+.p-bottom {
+	padding-bottom: 4%;
+}
+
+/* CARDS */
+
+.card {
+	border-radius: 0;
+	margin: 2px;
+}
+
+.btn-primary {
+	background-color: #634AEE;
+	border: none;
+	border-radius: 0;
+}
+
+a.out {
+	color: black;
+	font-weight: 700;
+	text-decoration: none;
+	transition: 0.2s;
+	box-shadow: inset 0px -4px #7BB4FF;
+}
+
+a.out:hover {
+	color: black;
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: inset 0px -4px #32527B;
+	transition: 0.2s;
+}
+
+.card-title {
+}
+
+p a {
+	border-bottom: 2px solid #7BB4FF;
+	text-decoration: none;
+	color: black;
+	transition: 0.2s;
+}
+
+p a:hover {
+	border-bottom: 2px solid #32527B;
+	text-decoration: none;
+	color: #32527B;
+	transition: 0.2s;
+}
+
+
+
+

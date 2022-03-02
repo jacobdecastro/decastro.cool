@@ -1,0 +1,9 @@
+---
+layout: default
+title:  From memory 
+subhead: Web presentation for the story of a home torn down against city rules
+image-url: https://i1.wp.com/jacobdecastro.com/wp-content/uploads/2020/11/memory.png?w=500&ssl=1
+project-url: http://specials.idsnews.com/from-memory-stancombe-house-seventh-street-bloomington-indiana/index.html
+---
+
+<i class="bi bi-tags-fill"></i> Front-end dev

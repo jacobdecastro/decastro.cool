@@ -1,0 +1,9 @@
+---
+layout: default
+title:  NYC 25x25
+subhead: Site revamp of TA's signature campaign to reclaim space from cars
+image-url: assets/images/projects/nyc25x25.png
+project-url: https://nyc25x25.org
+---
+
+<i class="bi bi-tags-fill"></i> Project management, Front-end dev, Back-end dev

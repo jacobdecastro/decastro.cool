@@ -1,0 +1,9 @@
+---
+layout: default
+title:  Shovel-ready streets
+subhead: Five site studies that demonstrate what is possible when we put people over cars
+image-url: /assets/images/projects/remix.png
+project-url: https://nyc25x25.org/streets-remix.html
+---
+
+<i class="bi bi-tags-fill"></i> Front-end dev

@@ -1,0 +1,15 @@
+---
+layout: default
+title:  How IU does its laundry 
+subhead: Analyzing laundry app data to find the best time for people to do laundry by residence hall
+image-url: https://i0.wp.com/jacobdecastro.com/wp-content/uploads/2020/11/laundry.png?w=500&ssl=1
+project-url: http://specials.idsnews.com/how-iu-does-its-laundry/
+---
+
+<i class="bi bi-tags-fill"></i> Reporting, Front-end dev
+
+<i class="bi bi-award-fill"></i> Honorable mention in Interactive Graphic, 2020 Associated College Press Awards
+
+<i class="bi bi-award-fill"></i> Finalist in Data Visualization, 2019 Society of Professional Journalists Mark of Excellence Awards
+
+<i class="bi bi-award-fill"></i> First place in Data Visualization, 2019 Society of Professional Journalists Region 5 Mark of Excellence Awards

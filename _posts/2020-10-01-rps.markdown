@@ -1,0 +1,9 @@
+---
+layout: default
+title:  Residence hall staff are at a breaking point 
+subhead: Buildout to highlight the words of residence hall staffers 
+image-url: https://i0.wp.com/jacobdecastro.com/wp-content/uploads/2020/11/breakingpoint.png?w=500&ssl=1
+project-url: http://specials.idsnews.com/iu-resident-assistants-share-story-covid-19-iupd-rps-dorms/
+---
+
+<i class="bi bi-tags-fill"></i> Front-end dev

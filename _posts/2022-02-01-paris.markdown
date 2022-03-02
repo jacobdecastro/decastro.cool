@@ -1,0 +1,9 @@
+---
+layout: default
+title:  Paris's car-free zone
+subhead: Analyzing laundry app data to find the best time for people to do laundry by residence hall
+image-url: /assets/images/projects/paris.png
+project-url: https://transportationalternatives.github.io/projects/paris/
+---
+
+<i class="bi bi-tags-fill"></i> Front-end dev

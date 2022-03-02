@@ -1,0 +1,9 @@
+---
+layout: default
+title:  Little 500 Guide
+subhead: Hub for Little 500 race content and coverage
+image-url: https://i2.wp.com/jacobdecastro.com/wp-content/uploads/2020/11/little500.png?w=500&ssl=1
+project-url: http://specials.idsnews.com/2019little500/index.html
+---
+
+<i class="bi bi-tags-fill"></i> Data viz, Front-end dev, Project management
