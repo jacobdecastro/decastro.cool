@@ -1,0 +1,53 @@
+body {
+	font-family: neue-haas-grotesk-display, sans-serif !important;
+	
+}
+
+.top {
+	text-align: center;
+    background-color: #FFB5B5;
+}
+
+.section {
+	min-height: 100vh;
+	background-position: center;
+		display: flex;
+  	display: -webkit-flex;
+  	display: flex;
+  	-webkit-align-items: center;
+  	align-items: center;
+  	-webkit-justify-content: center;
+  	justify-content: center;
+  	background: center center;
+  	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.IDS {
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 4em;
+	color: black;
+}
+
+.tilt {
+  display: inline-block;
+  animation: rotation 5s infinite linear;
+}
+
+@keyframes rotation {
+  33% {
+    transform: rotate(2deg);
+  }
+  66% {
+    transform: rotate(-2deg);
+  }
+  100% {
+  	transform: rotate(0deg);
+  }
+}
