@@ -1,7 +1,7 @@
 ---
 layout: default
 title:  Paris's car-free zone
-subhead: Analyzing laundry app data to find the best time for people to do laundry by residence hall
+subhead: An approximation of what the zone coming to Paris in 2024 would look like in the city
 image-url: /assets/images/projects/paris.png
 project-url: https://transportationalternatives.github.io/projects/paris/
 ---
