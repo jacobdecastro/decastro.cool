@@ -6,8 +6,9 @@ html { font-family: 'Inter', sans-serif; }
   html { font-family: 'Inter var', sans-serif; }
 }
 
+
 body {
-	font-family: 'Inter', sans-serif !important;
+	font-family: 'Inter', system-ui, sans-serif !important;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -23,7 +24,7 @@ p.mono {
 .navbar {
 	background-clip: white;
 	border-bottom: 1px solid black;
-	font-family: 'Inter', sans-serif;
+	font-family: 'Overpass', sans-serif;
 }
 
 a.nav-link {
@@ -31,7 +32,7 @@ a.nav-link {
 }
 
 .navbar-brand {
-	font-weight: 600;
+	font-weight: 700;
 }
 
 .navbar-brand, .nav-item {
@@ -73,7 +74,7 @@ a.out:hover {
 	color: black;
 	font-weight: 700;
 	text-decoration: none;
-	box-shadow: inset 0px -4px #32527B;
+	box-shadow: inset 0px -6px #32527B;
 	transition: 0.2s;
 }
 
@@ -81,19 +82,17 @@ a.out:hover {
 }
 
 p a {
-	border-bottom: 2px solid #7BB4FF;
+	box-shadow: inset 0px -2px #7BB4FF;
 	text-decoration: none;
 	color: black;
 	transition: 0.2s;
 }
 
 p a:hover {
-	border-bottom: 2px solid #32527B;
+	box-shadow: inset 0px -3px #32527B;
 	text-decoration: none;
 	color: #32527B;
 	transition: 0.2s;
 }
-
-
 
 
